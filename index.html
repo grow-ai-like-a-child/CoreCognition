@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Home"
-description: "RewardAnything: Generalizable Principle-Following Reward Models"
+description: "Core Knowledge Deficits in Multi-Modal Language Models"
 ---
 
 <!-- Hero Section -->
@@ -22,8 +22,12 @@ description: "RewardAnything: Generalizable Principle-Following Reward Models"
         <div class="text-lg md:text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed space-y-4 mb-10">
             <p>
                 While Multi-modal Large Language Models (MLLMs) demonstrate impressive abilities over high-level perception and reasoning, their robustness in the wild remains limited, often falling short on tasks that are intuitive and effortless for humans. We examine the hypothesis that these deficiencies stem from the absence of core knowledge—rudimentary cognitive abilities innate to humans from early childhood. 
+            </p>
+            <p>
                 To explore the core knowledge representation in MLLMs, we introduce <span class="font-semibold text-blue-700">CoreCognition</span>, a large-scale benchmark encompassing 12 core knowledge concepts grounded in developmental cognitive science.
                 We evaluate <span class="font-semibold text-slate-900">230 models with 11 different prompts</span>, leading to a total of <span class="font-semibold text-slate-900">2,530 data points</span> for analysis. Our experiments uncover four key findings, collectively demonstrating core knowledge deficits in MLLMs: they consistently underperform and show reduced, or even absent, scalability on low-level abilities relative to high-level ones.
+            </p>
+            <p>
                 Finally, we propose <span class="font-semibold text-blue-700">Concept Hacking</span>, a novel controlled evaluation method, that reveals MLLMs fail to progress toward genuine core knowledge understanding, but instead rely on shortcut learning as they scale.
             </p>
         </div>
@@ -38,10 +42,6 @@ description: "RewardAnything: Generalizable Principle-Following Reward Models"
                class="inline-flex items-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
                 🤗 <span class="ml-2">Dataset</span>
             </a>
-<!--             <a href="#quickstart" 
-               class="inline-flex items-center bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all transform hover:scale-105 shadow-lg">
-                💻 <span class="ml-2">Get Started</span>
-            </a> -->
         </div>
     </div>
 </section>
@@ -53,31 +53,38 @@ description: "RewardAnything: Generalizable Principle-Following Reward Models"
             <div class="space-y-3">
                 <!-- First line of authors (5 authors) -->
             <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                <span>Zhuohao Yu<sup>1,§</sup></span>
-                <span>Jiali Zeng<sup>2</sup></span>
-                <span>Weizheng Gu<sup>1</sup></span>
-                <span>Yidong Wang<sup>1</sup></span>
-                <span>Jindong Wang<sup>3</sup></span>
+                <span>Yijiang Li<sup>1</sup></span>
+                <span>Qingying Gao<sup>2,§</sup></span>
+                <span>Tianwei Zhao<sup>2,§</sup></span>
+                <span>Bingyang Wang<sup>3,§</sup></span>
+                <span>Haoran Sun<sup>2</sup></span>
                 </div>
                 <!-- Second line of authors (5 authors) -->
                 <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                <span>Fandong Meng<sup>2</sup></span>
-                <span>Jie Zhou<sup>2</sup></span>
-                <span>Yue Zhang<sup>4</sup></span>
-                <span>Shikun Zhang<sup>1</sup></span>
-                <span>Wei Ye<sup>1,†</sup></span>
+                <span>Haiyun Lyu<sup>4</sup></span>
+                <span>Robert D. Hawkins<sup>5</sup></span>
+                <span>Nuno Vasconcelos<sup>1</sup></span>
+                <span>Tal Golan<sup>6</sup></span>
+                <span>Dezhi Luo<sup>7,8,†</sup></span>
+                <span>Hokin Deng<sup>9,†</sup></span>
             </div>
         </div>
         </div>
         <div class="text-base md:text-lg text-gray-600">
             <div class="mb-4 font-bold">
-                <sup>1</sup>Peking University &emsp;
-                <sup>2</sup>WeChat AI &emsp;
-                <sup>3</sup>William & Mary &emsp;
-                <sup>4</sup>Westlake University
+                <sup>1</sup>University of California San Diego &emsp;
+                <sup>2</sup>Johns Hopkins University &emsp;
+                <sup>3</sup>Emory University &emsp;
+                <sup>4</sup>University of North Carolina at Chapel Hill &emsp;
+                <sup>5</sup>Stanford University &emsp;
+                <sup>6</sup>Ben-Gurion University of the Negev &emsp;
+                <sup>7</sup>University of Michigan &emsp;
+                <sup>8</sup>University College London &emsp;
+                <sup>9</sup>Carnegie Mellon University &emsp;
             </div>
             <p class="text-sm md:text-base text-gray-500">
-                <sup>§</sup>Work done during internship at WeChat AI &emsp; <sup>†</sup>Corresponding author
+                <sup>§</sup>Equal Contribution &emsp; 
+                <sup>†</sup>Corresponding author
             </p>
         </div>
     </div>
@@ -377,6 +384,7 @@ description: "RewardAnything: Generalizable Principle-Following Reward Models"
             </p>
         </div>
 
+        <!-- LeaderBoard -->
         <div class="overflow-x-auto">
             <table class="min-w-full table-auto border border-gray-200 text-left text-sm text-gray-600">
                 <thead class="bg-gray-100">
