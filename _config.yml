@@ -30,10 +30,10 @@ exclude:
   - README.md
 
 # Social links
-github_username: WisdomShell
+github_username: grow-ai-like-a-child
 paper_url: "https://arxiv.org/abs/2410.10855"
 huggingface_url: "https://huggingface.co/WisdomShell/RewardAnything-8B-v1"
-pypi_url: "https://pypi.org/project/rewardanything/"
+pypi_url: ""
 
 # Project info
 version: "1.0.1"
