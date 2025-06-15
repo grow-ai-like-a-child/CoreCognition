@@ -7,12 +7,12 @@ description: "RewardAnything: Generalizable Principle-Following Reward Models"
 <!-- Hero Section -->
 <section class="gradient-bg text-slate-700 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="mb-6">
+<!--         <div class="mb-6">
             <!-- Use your regular logo - it will look perfect on this lighter background -->
             <img src="{{ '/assets/images/rewardanything-logo-horizontal.png' | relative_url }}" 
                  alt="RewardAnything" 
                  class="h-16 md:h-20 w-auto mx-auto mb-4">
-        </div>
+        </div> -->
         
         <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-8 max-w-4xl mx-auto">
             Generalizable Principle-Following Reward Models
@@ -21,13 +21,10 @@ description: "RewardAnything: Generalizable Principle-Following Reward Models"
         <!-- Simplified TLDR with cleaner formatting -->
         <div class="text-lg md:text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed space-y-4 mb-10">
             <p>
-                Traditional reward models learn <span class="font-semibold text-slate-900">implicit preferences</span> from fixed data, 
-                but human values are <span class="font-semibold text-slate-900">too nuanced</span> for any single, static model.
-            </p>
-            <p>
-                We believe reward models, much like LLMs with instructions, must follow 
-                <span class="font-semibold text-blue-700">explicitly specified principles</span>. 
-                This unlocks <span class="font-semibold text-slate-900">inference-time adaptability</span> to diverse criteria—<span class="font-semibold text-slate-900">without costly retraining</span>.
+                While Multi-modal Large Language Models (MLLMs) demonstrate impressive abilities over high-level perception and reasoning, their robustness in the wild remains limited, often falling short on tasks that are intuitive and effortless for humans. We examine the hypothesis that these deficiencies stem from the absence of core knowledge—rudimentary cognitive abilities innate to humans from early childhood. 
+                To explore the core knowledge representation in MLLMs, we introduce <span class="font-semibold text-blue-700">CoreCognition</span>, a large-scale benchmark encompassing 12 core knowledge concepts grounded in developmental cognitive science.
+                We evaluate <span class="font-semibold text-slate-900">230 models with 11 different prompts</span>, leading to a total of <span class="font-semibold text-slate-900">2,530 data points</span> for analysis. Our experiments uncover four key findings, collectively demonstrating core knowledge deficits in MLLMs: they consistently underperform and show reduced, or even absent, scalability on low-level abilities relative to high-level ones.
+                Finally, we propose <span class="font-semibold text-blue-700">Concept Hacking</span>, a novel controlled evaluation method, that reveals MLLMs fail to progress toward genuine core knowledge understanding, but instead rely on shortcut learning as they scale.
             </p>
         </div>
         
