@@ -16,39 +16,30 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
         <!-- LeaderBoard -->
         <!-- Scrollable Table Container -->
     <div class="overflow-x-auto max-w-full border border-gray-200 rounded-lg">
-      <table class="min-w-full table-auto text-sm text-left text-gray-600">
+      <table id="leaderboard-table" class="min-w-full table-auto text-sm text-left text-gray-600">
         <thead class="bg-gray-100">
           <tr>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Model Name</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Boundary</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Continuity</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Permanence</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Spatiality</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Perceptual Constancy</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Intuitive Physics</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Perspective</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Conservation</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Hierarchy</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Intentionality</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Mechanical Reasoning</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Tool Using</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Mean</th>
+            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900"><button type="button" class="w-full text-left" data-key="model_name">Model</button></th>
+            {% assign fields = "boundary,continuity,permanence,spatiality,perceptualconstancy,intuitivephysics,perspective,conservation,hierarchy,intentionality,mechanicalreasoning,toolusing,mean" | split: "," %}
+            {% for field in fields %}
+            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">
+              <button type="button" class="w-full text-left" data-key="{{ field }}">{{ field | replace: '_', ' ' | capitalize }}</button>
+            </th>
+            {% endfor %}
           </tr>
         </thead>
-        <tbody>
+        <tbody id="leaderboard-body">
           {% for row in site.data.leaderboard %}
           <tr class="border-t border-gray-200">
             <td class="px-4 py-2 font-medium text-gray-900">{{ row.model_name }}</td>
-            {% assign fields = "boundary,continuity,permanence,spatiality,perceptualconstancy,intuitivephysics,perspective,conservation,hierarchy,intentionality,mechanicalreasoning,toolusing,mean" | split: "," %}
             {% for field in fields %}
               {% assign value = row[field] | plus: 0 %}
-              <td class="px-4 py-2 {% if value >= 90 %}bg-green-100 font-semibold{% endif %}">{{ value | round: 2 }}%</td>
+              <td class="px-4 py-2 {% if value >= 90 %}bg-green-100 font-semibold{% endif %}" data-key="{{ field }}">{{ value | round: 2 }}%</td>
             {% endfor %}
           </tr>
           {% endfor %}
         </tbody>
       </table>
     </div>
-
-    </div>
+  </div>
 </section>
