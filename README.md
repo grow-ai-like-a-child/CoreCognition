@@ -1,6 +1,6 @@
 # RewardAnything GitHub Pages
 
-This directory contains the GitHub Pages website for the RewardAnything project.
+This directory contains the GitHub Pages website for the Core Knowledge Deficits in Multi-Modal Language Models project.
 
 ## 🏗️ Structure
 
@@ -19,8 +19,6 @@ pages/
 ```
 
 ## 🚀 Automatic Deployment
-
-The site automatically deploys to `https://zhuohaoyu.github.io/RewardAnything` whenever:
 
 1. **Changes are pushed** to the `main` branch in the `pages/` directory
 2. **Manual trigger** via GitHub Actions tab
@@ -145,5 +143,3 @@ When making changes:
 4. Automatic deployment will trigger
 
 ---
-
-**Live Site**: https://zhuohaoyu.github.io/RewardAnything 
