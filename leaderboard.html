@@ -43,7 +43,7 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
     </div>
     
     <div  class="overflow-x-auto max-w-full border border-gray-200 rounded-lg">
-      <table id="leaderboard-table" class="min-w-full table-auto text-sm text-left text-gray-600">
+      <table id="leaderboard-table-total" class="min-w-full table-auto text-sm text-left text-gray-600">
         <thead class="bg-gray-100">
           <tr>
             <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900"><button type="button" class="w-full text-left" data-key="model_name">Model</button></th>
@@ -55,7 +55,7 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
             {% endfor %}
           </tr>
         </thead>
-        <tbody id="leaderboard-body">
+        <tbody id="leaderboard-body-total">
           {% for row in site.data.leaderboard_total %}
           <tr class="border-t border-gray-200">
             <td class="px-4 py-2 font-medium text-gray-900">{{ row.model_name }}</td>
@@ -78,7 +78,7 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
     </div>
     
     <div  class="overflow-x-auto max-w-full border border-gray-200 rounded-lg">
-      <table id="leaderboard-table" class="min-w-full table-auto text-sm text-left text-gray-600">
+      <table id="leaderboard-table-imageonly" class="min-w-full table-auto text-sm text-left text-gray-600">
         <thead class="bg-gray-100">
           <tr>
             <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900"><button type="button" class="w-full text-left" data-key="model_name">Model</button></th>
@@ -90,7 +90,7 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
             {% endfor %}
           </tr>
         </thead>
-        <tbody id="leaderboard-body">
+        <tbody id="leaderboard-body-imageonly">
           {% for row in site.data.leaderboard_image_only %}
           <tr class="border-t border-gray-200">
             <td class="px-4 py-2 font-medium text-gray-900">{{ row.model_name }}</td>
@@ -113,7 +113,7 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
     </div>
     
     <div  class="overflow-x-auto max-w-full border border-gray-200 rounded-lg">
-      <table id="leaderboard-table" class="min-w-full table-auto text-sm text-left text-gray-600">
+      <table id="leaderboard-table-single" class="min-w-full table-auto text-sm text-left text-gray-600">
         <thead class="bg-gray-100">
           <tr>
             <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900"><button type="button" class="w-full text-left" data-key="model_name">Model</button></th>
@@ -125,7 +125,7 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
             {% endfor %}
           </tr>
         </thead>
-        <tbody id="leaderboard-body">
+        <tbody id="leaderboard-body-single">
           {% for row in site.data.leaderboard_single %}
           <tr class="border-t border-gray-200">
             <td class="px-4 py-2 font-medium text-gray-900">{{ row.model_name }}</td>
@@ -141,35 +141,37 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
 </section>
 
 <script>
-document.querySelectorAll('#leaderboard-table thead button').forEach(button => {
-  button.addEventListener('click', () => {
-    const key = button.getAttribute('data-key');
-    const tbody = document.querySelector('#leaderboard-body');
-    const rows = Array.from(tbody.querySelectorAll('tr'));
-    const isNumeric = key !== 'model_name';
+document.querySelectorAll('table').forEach(table => {
+  const tableId = table.id;
+  const tbody = table.querySelector('tbody');
 
-    // Toggle sort direction
-    const currentDir = button.getAttribute('data-dir') || 'asc';
-    const newDir = currentDir === 'asc' ? 'desc' : 'asc';
-    button.setAttribute('data-dir', newDir);
+  table.querySelectorAll('thead button').forEach(button => {
+    button.addEventListener('click', () => {
+      const key = button.getAttribute('data-key');
+      const isNumeric = key !== 'model_name';
+      const rows = Array.from(tbody.querySelectorAll('tr'));
 
-    rows.sort((a, b) => {
-      const aCell = a.querySelector(`[data-key="${key}"]`) || a.querySelector('td');
-      const bCell = b.querySelector(`[data-key="${key}"]`) || b.querySelector('td');
-      const aText = aCell.textContent.replace('%', '');
-      const bText = bCell.textContent.replace('%', '');
+      const currentDir = button.getAttribute('data-dir') || 'asc';
+      const newDir = currentDir === 'asc' ? 'desc' : 'asc';
+      button.setAttribute('data-dir', newDir);
 
-      const aVal = isNumeric ? parseFloat(aText) : aText.toLowerCase();
-      const bVal = isNumeric ? parseFloat(bText) : bText.toLowerCase();
+      rows.sort((a, b) => {
+        const aCell = a.querySelector(`[data-key="${key}"]`) || a.querySelector('td');
+        const bCell = b.querySelector(`[data-key="${key}"]`) || b.querySelector('td');
+        const aText = aCell.textContent.replace('%', '').trim();
+        const bText = bCell.textContent.replace('%', '').trim();
 
-      if (aVal < bVal) return newDir === 'asc' ? -1 : 1;
-      if (aVal > bVal) return newDir === 'asc' ? 1 : -1;
-      return 0;
+        const aVal = isNumeric ? parseFloat(aText) : aText.toLowerCase();
+        const bVal = isNumeric ? parseFloat(bText) : bText.toLowerCase();
+
+        if (aVal < bVal) return newDir === 'asc' ? -1 : 1;
+        if (aVal > bVal) return newDir === 'asc' ? 1 : -1;
+        return 0;
+      });
+
+      tbody.innerHTML = '';
+      rows.forEach(row => tbody.appendChild(row));
     });
-
-    // Re-render
-    tbody.innerHTML = '';
-    rows.forEach(row => tbody.appendChild(row));
   });
 });
 </script>
