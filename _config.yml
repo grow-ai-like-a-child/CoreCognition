@@ -1,7 +1,7 @@
-title: "RewardAnything"
-description: "Generalizable Principle-Following Reward Models"
-url: "https://zhuohaoyu.github.io"
-baseurl: "/RewardAnything"
+title: "cogBench"
+description: "Core Knowledge Deficits in Multi-Modal Language Models"
+url: "https://kaiagaoqy.github.io"
+baseurl: "/kaiagaoqy"
 
 # Build settings
 markdown: kramdown
@@ -31,7 +31,7 @@ exclude:
 
 # Social links
 github_username: WisdomShell
-paper_url: "https://arxiv.org/abs/2506.03637"
+paper_url: "https://arxiv.org/abs/2410.10855"
 huggingface_url: "https://huggingface.co/WisdomShell/RewardAnything-8B-v1"
 pypi_url: "https://pypi.org/project/rewardanything/"
 
