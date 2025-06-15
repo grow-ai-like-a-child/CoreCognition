@@ -369,55 +369,6 @@ description: "Core Knowledge Deficits in Multi-Modal Language Models"
     </div>
 </section>
 
-<!-- Installation & Usage Guide -->
-<section id="leaderboard" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">🚀 LeaderBoard</h2>
-            <p class="text-xl text-gray-600 max-w-4xl mx-auto">
-                Core Cognitive Benchmarking ... Coming Soon!
-            </p>
-        </div>
-
-        <!-- LeaderBoard -->
-        <!-- Scrollable Table Container -->
-    <div class="overflow-x-auto max-w-full border border-gray-200 rounded-lg">
-      <table class="min-w-full table-auto text-sm text-left text-gray-600">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Model Name</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Boundary</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Continuity</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Permanence</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Spatiality</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Perceptual Constancy</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Intuitive Physics</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Perspective</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Conservation</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Hierarchy</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Intentionality</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Mechanical Reasoning</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Tool Using</th>
-            <th class="sticky top-0 z-10 bg-gray-100 px-4 py-2 font-semibold text-gray-900">Mean</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for row in site.data.leaderboard %}
-          <tr class="border-t border-gray-200">
-            <td class="px-4 py-2 font-medium text-gray-900">{{ row.model_name }}</td>
-            {% assign fields = "boundary,continuity,permanence,spatiality,perceptualconstancy,intuitivephysics,perspective,conservation,hierarchy,intentionality,mechanicalreasoning,toolusing,mean" | split: "," %}
-            {% for field in fields %}
-              {% assign value = row[field] | plus: 0 %}
-              <td class="px-4 py-2 {% if value >= 90 %}bg-green-100 font-semibold{% endif %}">{{ value | round: 2 }}%</td>
-            {% endfor %}
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-
-    </div>
-</section>
 
 
 <!-- Performance Results -->
