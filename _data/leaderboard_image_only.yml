@@ -11,7 +11,7 @@
   perspective: 36.986301369863014
   spatiality: 74.62121212121212
   toolusing: 95.83333333333334
-  true_mean: 69.62211229468501
+  mean: 69.62211229468501
 - model_name: step-1o-turbo-vision
   boundary: 82.11610486891387
   conservation: 66.34920634920636
@@ -25,7 +25,7 @@
   perspective: 40.01141552511414
   spatiality: 74.62121212121211
   toolusing: 99.16666666666669
-  true_mean: 69.49022944013213
+  mean: 69.49022944013213
 - model_name: glm-4v-plus
   boundary: 91.66666666666666
   conservation: 55.23809523809524
@@ -39,7 +39,7 @@
   perspective: 26.94063926940639
   spatiality: 61.55303030303029
   toolusing: 100.0
-  true_mean: 68.21890652107989
+  mean: 68.21890652107989
 - model_name: points-qwen-2.5-7b-chat
   boundary: 71.42857142857143
   conservation: 42.85714285714285
@@ -53,7 +53,7 @@
   perspective: 32.75462962962962
   spatiality: 71.42857142857143
   toolusing: 97.91666666666666
-  true_mean: 66.49840567608169
+  mean: 66.49840567608169
 - model_name: nvlm-d-72b
   boundary: 80.9925093632959
   conservation: 53.333333333333336
@@ -67,7 +67,7 @@
   perspective: 32.36301369863014
   spatiality: 69.6969696969697
   toolusing: 100.0
-  true_mean: 66.0262682222599
+  mean: 66.0262682222599
 - model_name: wemm-chat-2k-cn
   boundary: 80.24344569288388
   conservation: 67.61904761904762
@@ -81,7 +81,7 @@
   perspective: 32.19178082191781
   spatiality: 62.121212121212125
   toolusing: 100.0
-  true_mean: 65.79152407573643
+  mean: 65.79152407573643
 - model_name: omchat
   boundary: 74.812734082397
   conservation: 64.44444444444444
@@ -95,7 +95,7 @@
   perspective: 34.417808219178085
   spatiality: 56.43939393939393
   toolusing: 94.79166666666666
-  true_mean: 65.43226507547779
+  mean: 65.43226507547779
 - model_name: step-1v-32k
   boundary: 76.49812734082396
   conservation: 38.09523809523809
@@ -109,7 +109,7 @@
   perspective: 33.04794520547945
   spatiality: 69.12878787878788
   toolusing: 98.95833333333334
-  true_mean: 64.5014154629419
+  mean: 64.5014154629419
 - model_name: glm-4v-9b
   boundary: 80.33707865168539
   conservation: 34.92063492063492
@@ -123,7 +123,7 @@
   perspective: 39.269406392694066
   spatiality: 58.52272727272728
   toolusing: 93.125
-  true_mean: 64.17033748619902
+  mean: 64.17033748619902
 - model_name: molmo-72b-0924
   boundary: 71.16104868913857
   conservation: 48.88888888888888
@@ -137,7 +137,7 @@
   perspective: 40.01141552511414
   spatiality: 81.06060606060606
   toolusing: 100.0
-  true_mean: 63.96026749621503
+  mean: 63.96026749621503
 - model_name: cambrian_34b
   boundary: 77.62172284644194
   conservation: 60.952380952380956
@@ -151,7 +151,7 @@
   perspective: 25.11415525114155
   spatiality: 67.23484848484848
   toolusing: 100.0
-  true_mean: 63.08193037013342
+  mean: 63.08193037013342
 - model_name: cambrian_13b
   boundary: 75.374531835206
   conservation: 43.80952380952381
@@ -165,7 +165,7 @@
   perspective: 29.28082191780822
   spatiality: 69.6969696969697
   toolusing: 95.0
-  true_mean: 62.78937575721538
+  mean: 62.78937575721538
 - model_name: internlm-xcomposer2-4khd-7b
   boundary: 73.03370786516854
   conservation: 65.71428571428571
@@ -179,7 +179,7 @@
   perspective: 32.99086757990868
   spatiality: 63.44696969696969
   toolusing: 100.0
-  true_mean: 61.364192159943045
+  mean: 61.364192159943045
 - model_name: ovis1.6-gemma2-27b
   boundary: 82.39700374531836
   conservation: 49.84126984126984
@@ -193,7 +193,7 @@
   perspective: 18.94977168949771
   spatiality: 67.99242424242425
   toolusing: 100.0
-  true_mean: 61.30221545387277
+  mean: 61.30221545387277
 - model_name: wemm
   boundary: 77.24719101123597
   conservation: 40.31746031746031
@@ -207,7 +207,7 @@
   perspective: 31.56392694063926
   spatiality: 60.79545454545454
   toolusing: 100.0
-  true_mean: 61.01281820810588
+  mean: 61.01281820810588
 - model_name: reka-core
   boundary: 69.66292134831461
   conservation: 48.25396825396824
@@ -221,7 +221,7 @@
   perspective: 42.97945205479452
   spatiality: 44.88636363636364
   toolusing: 100.0
-  true_mean: 60.96729989801125
+  mean: 60.96729989801125
 - model_name: bunny-llama3-8b
   boundary: 81.17977528089888
   conservation: 46.34920634920634
@@ -235,7 +235,7 @@
   perspective: 37.95662100456621
   spatiality: 47.72727272727273
   toolusing: 100.0
-  true_mean: 60.518167654318546
+  mean: 60.518167654318546
 - model_name: cambrian_8b
   boundary: 78.65168539325843
   conservation: 64.76190476190476
@@ -249,7 +249,7 @@
   perspective: 21.347031963470307
   spatiality: 62.68939393939393
   toolusing: 98.95833333333334
-  true_mean: 60.24778387083818
+  mean: 60.24778387083818
 - model_name: cogvlm2-llama3-chat-19b
   boundary: 76.31086142322097
   conservation: 38.41269841269841
@@ -263,7 +263,7 @@
   perspective: 43.66438356164385
   spatiality: 54.73484848484848
   toolusing: 92.29166666666666
-  true_mean: 60.0768660122507
+  mean: 60.0768660122507
 - model_name: molmo-7b-d-0924
   boundary: 68.35205992509363
   conservation: 31.11111111111111
@@ -277,7 +277,7 @@
   perspective: 42.18036529680365
   spatiality: 74.05303030303028
   toolusing: 98.33333333333334
-  true_mean: 59.90946716922916
+  mean: 59.90946716922916
 - model_name: mgm-7b-hd
   boundary: 75.65543071161048
   conservation: 64.44444444444444
@@ -291,7 +291,7 @@
   perspective: 38.41324200913241
   spatiality: 54.92424242424243
   toolusing: 91.04166666666667
-  true_mean: 59.84741265353837
+  mean: 59.84741265353837
 - model_name: idefics2_8b
   boundary: 72.75280898876404
   conservation: 39.36507936507936
@@ -305,7 +305,7 @@
   perspective: 25.28538812785387
   spatiality: 54.356060606060595
   toolusing: 97.56944444444444
-  true_mean: 59.773875328502456
+  mean: 59.773875328502456
 - model_name: 360vl-70b
   boundary: 77.05992509363296
   conservation: 31.428571428571427
@@ -319,7 +319,7 @@
   perspective: 25.91324200913242
   spatiality: 57.765151515151516
   toolusing: 97.5
-  true_mean: 59.71879163993168
+  mean: 59.71879163993168
 - model_name: internlm-xcomposer2-vl-7b
   boundary: 78.65168539325843
   conservation: 63.49206349206349
@@ -333,7 +333,7 @@
   perspective: 27.910958904109588
   spatiality: 63.257575757575765
   toolusing: 98.125
-  true_mean: 59.705176175561945
+  mean: 59.705176175561945
 - model_name: glm-4v
   boundary: 76.77902621722846
   conservation: 30.15873015873016
@@ -347,7 +347,7 @@
   perspective: 39.95433789954338
   spatiality: 65.3409090909091
   toolusing: 94.375
-  true_mean: 59.30565545059676
+  mean: 59.30565545059676
 - model_name: llava-internlm-7b
   boundary: 70.59925093632958
   conservation: 38.73015873015872
@@ -361,7 +361,7 @@
   perspective: 39.32648401826484
   spatiality: 65.3409090909091
   toolusing: 100.0
-  true_mean: 59.00517400104497
+  mean: 59.00517400104497
 - model_name: aquila-vl-2b-llava-qwen
   boundary: 76.02996254681649
   conservation: 15.55555555555555
@@ -375,7 +375,7 @@
   perspective: 37.7283105022831
   spatiality: 53.787878787878796
   toolusing: 96.45833333333333
-  true_mean: 58.88275967648039
+  mean: 58.88275967648039
 - model_name: parrot-14b
   boundary: 70.69288389513108
   conservation: 46.666666666666664
@@ -389,7 +389,7 @@
   perspective: 31.107305936073047
   spatiality: 57.007575757575744
   toolusing: 89.79166666666667
-  true_mean: 58.51924513988235
+  mean: 58.51924513988235
 - model_name: wemm-chat-cn
   boundary: 85.95505617977527
   conservation: 43.49206349206348
@@ -403,7 +403,7 @@
   perspective: 29.85159817351598
   spatiality: 56.81818181818182
   toolusing: 98.33333333333334
-  true_mean: 58.42159914619587
+  mean: 58.42159914619587
 - model_name: llava-v1.5-13b-xtuner
   boundary: 75.56179775280899
   conservation: 39.04761904761905
@@ -417,7 +417,7 @@
   perspective: 37.61415525114154
   spatiality: 59.84848484848484
   toolusing: 91.45833333333331
-  true_mean: 58.375679860903226
+  mean: 58.375679860903226
 - model_name: reka-flash
   boundary: 65.73033707865169
   conservation: 38.73015873015872
@@ -431,7 +431,7 @@
   perspective: 41.495433789954326
   spatiality: 55.68181818181818
   toolusing: 92.8472222222222
-  true_mean: 57.59729709551774
+  mean: 57.59729709551774
 - model_name: yi-vl-34b
   boundary: 72.56554307116106
   conservation: 69.20634920634922
@@ -445,7 +445,7 @@
   perspective: 28.31050228310502
   spatiality: 58.90151515151515
   toolusing: 100.0
-  true_mean: 57.48775337628601
+  mean: 57.48775337628601
 - model_name: llama-3-mixsensev1_1
   boundary: 72.84644194756555
   conservation: 37.14285714285714
@@ -459,7 +459,7 @@
   perspective: 31.05022831050228
   spatiality: 71.02272727272727
   toolusing: 96.25
-  true_mean: 57.34224906169866
+  mean: 57.34224906169866
 - model_name: monkey-chat
   boundary: 71.16104868913858
   conservation: 39.682539682539684
@@ -473,7 +473,7 @@
   perspective: 43.949771689497716
   spatiality: 47.159090909090914
   toolusing: 89.58333333333334
-  true_mean: 57.13305374020479
+  mean: 57.13305374020479
 - model_name: moondream2
   boundary: 67.13483146067416
   conservation: 60.952380952380956
@@ -487,7 +487,7 @@
   perspective: 31.67808219178081
   spatiality: 51.893939393939405
   toolusing: 95.00000000000001
-  true_mean: 56.95746326574361
+  mean: 56.95746326574361
 - model_name: parrot-7b
   boundary: 74.25093632958803
   conservation: 58.0952380952381
@@ -501,7 +501,7 @@
   perspective: 33.276255707762544
   spatiality: 57.19696969696969
   toolusing: 97.08333333333331
-  true_mean: 56.25440768686553
+  mean: 56.25440768686553
 - model_name: llava_v1.5_13b
   boundary: 67.32209737827715
   conservation: 31.11111111111111
@@ -515,7 +515,7 @@
   perspective: 37.7283105022831
   spatiality: 45.07575757575758
   toolusing: 91.04166666666667
-  true_mean: 55.91957746078935
+  mean: 55.91957746078935
 - model_name: phi-3-vision
   boundary: 82.49063670411984
   conservation: 43.80952380952381
@@ -529,7 +529,7 @@
   perspective: 26.88356164383562
   spatiality: 61.36363636363637
   toolusing: 92.29166666666666
-  true_mean: 55.81808450062846
+  mean: 55.81808450062846
 - model_name: yi-vl-6b
   boundary: 75.187265917603
   conservation: 49.206349206349195
@@ -543,7 +543,7 @@
   perspective: 25.11415525114154
   spatiality: 64.58333333333334
   toolusing: 96.66666666666669
-  true_mean: 55.32779978817772
+  mean: 55.32779978817772
 - model_name: llava-v1.5-7b-xtuner
   boundary: 74.9063670411985
   conservation: 26.349206349206337
@@ -557,7 +557,7 @@
   perspective: 31.79223744292236
   spatiality: 60.03787878787878
   toolusing: 98.125
-  true_mean: 54.50908233884195
+  mean: 54.50908233884195
 - model_name: molmo-7b-o-0924
   boundary: 64.04494382022473
   conservation: 17.77777777777777
@@ -571,7 +571,7 @@
   perspective: 46.289954337899566
   spatiality: 70.45454545454545
   toolusing: 81.73611111111111
-  true_mean: 54.27179538293498
+  mean: 54.27179538293498
 - model_name: monkey
   boundary: 69.10112359550561
   conservation: 35.87301587301586
@@ -585,7 +585,7 @@
   perspective: 44.63470319634705
   spatiality: 65.53030303030305
   toolusing: 69.93055555555556
-  true_mean: 53.939806592437264
+  mean: 53.939806592437264
 - model_name: mplug-owl2-llama2-7b
   boundary: 69.4756554307116
   conservation: 38.09523809523809
@@ -599,7 +599,7 @@
   perspective: 41.26712328767124
   spatiality: 58.33333333333333
   toolusing: 88.33333333333334
-  true_mean: 53.661571838851565
+  mean: 53.661571838851565
 - model_name: instructblip-flan-t5-xxl
   boundary: 73.78277153558052
   conservation: 66.03174603174602
@@ -613,7 +613,7 @@
   perspective: 34.36073059360729
   spatiality: 50.0
   toolusing: 92.7777777777778
-  true_mean: 53.61363664760807
+  mean: 53.61363664760807
 - model_name: moondream1
   boundary: 66.47940074906369
   conservation: 41.269841269841265
@@ -627,7 +627,7 @@
   perspective: 42.35159817351598
   spatiality: 51.13636363636363
   toolusing: 97.63888888888887
-  true_mean: 53.5758626062901
+  mean: 53.5758626062901
 - model_name: reka-edge
   boundary: 61.048689138576776
   conservation: 35.55555555555555
@@ -641,7 +641,7 @@
   perspective: 44.97716894977168
   spatiality: 47.72727272727273
   toolusing: 89.79166666666667
-  true_mean: 53.541190882789444
+  mean: 53.541190882789444
 - model_name: molmoe-1b-0924
   boundary: 70.88014981273407
   conservation: 41.9047619047619
@@ -655,7 +655,7 @@
   perspective: 44.34931506849317
   spatiality: 61.55303030303029
   toolusing: 80.00000000000001
-  true_mean: 52.15324626247776
+  mean: 52.15324626247776
 - model_name: instructblip-flan-t5-xl
   boundary: 71.44194756554306
   conservation: 66.66666666666666
@@ -669,7 +669,7 @@
   perspective: 28.93835616438356
   spatiality: 58.90151515151515
   toolusing: 95.13888888888889
-  true_mean: 52.0793919366378
+  mean: 52.0793919366378
 - model_name: mmalaya
   boundary: 61.79775280898878
   conservation: 29.52380952380952
@@ -683,7 +683,7 @@
   perspective: 46.46118721461187
   spatiality: 56.06060606060607
   toolusing: 64.44444444444444
-  true_mean: 51.82171344841839
+  mean: 51.82171344841839
 - model_name: sharegpt4v_13b
   boundary: 71.06741573033709
   conservation: 67.61904761904762
@@ -697,7 +697,7 @@
   perspective: 39.55479452054795
   spatiality: 43.18181818181818
   toolusing: 92.5
-  true_mean: 51.600512600438044
+  mean: 51.600512600438044
 - model_name: internlm-xcomposer2-vl-1_8b
   boundary: 68.16479400749063
   conservation: 60.0
@@ -711,7 +711,7 @@
   perspective: 23.23059360730593
   spatiality: 51.70454545454546
   toolusing: 85.0
-  true_mean: 51.55804405022263
+  mean: 51.55804405022263
 - model_name: smolvlm-dpo
   boundary: 66.57303370786516
   conservation: 65.07936507936509
@@ -725,7 +725,7 @@
   perspective: 39.78310502283104
   spatiality: 42.23484848484849
   toolusing: 60.69444444444444
-  true_mean: 51.30216461785208
+  mean: 51.30216461785208
 - model_name: minimonkey
   boundary: 68.72659176029963
   conservation: 12.38095238095238
@@ -739,7 +739,7 @@
   perspective: 43.49315068493151
   spatiality: 62.5
   toolusing: 87.29166666666669
-  true_mean: 51.26831345073026
+  mean: 51.26831345073026
 - model_name: blip2-flan-t5-xxl
   boundary: 70.5992509363296
   conservation: 11.42857142857142
@@ -753,7 +753,7 @@
   perspective: 33.73287671232876
   spatiality: 63.63636363636363
   toolusing: 91.80555555555556
-  true_mean: 50.90751684721278
+  mean: 50.90751684721278
 - model_name: paligemma-3b-mix-448
   boundary: 59.17602996254684
   conservation: 22.22222222222222
@@ -767,7 +767,7 @@
   perspective: 45.547945205479465
   spatiality: 44.507575757575744
   toolusing: 84.51388888888887
-  true_mean: 50.43115993177709
+  mean: 50.43115993177709
 - model_name: sharegpt4v_7b
   boundary: 70.2247191011236
   conservation: 48.25396825396824
@@ -781,7 +781,7 @@
   perspective: 37.84246575342466
   spatiality: 28.78787878787879
   toolusing: 90.625
-  true_mean: 50.03730714526865
+  mean: 50.03730714526865
 - model_name: blip2-flan-t5-xl
   boundary: 71.06741573033707
   conservation: 60.952380952380956
@@ -795,7 +795,7 @@
   perspective: 26.541095890410947
   spatiality: 50.757575757575765
   toolusing: 93.125
-  true_mean: 50.01427462031608
+  mean: 50.01427462031608
 - model_name: cogvlm-chat
   boundary: 67.04119850187267
   conservation: 57.460317460317455
@@ -809,7 +809,7 @@
   perspective: 45.03424657534249
   spatiality: 41.47727272727273
   toolusing: 69.16666666666667
-  true_mean: 49.7166841840744
+  mean: 49.7166841840744
 - model_name: transcore-m
   boundary: 52.52808988764046
   conservation: 28.888888888888882
@@ -823,7 +823,7 @@
   perspective: 51.71232876712328
   spatiality: 46.40151515151515
   toolusing: 39.44444444444445
-  true_mean: 48.65810393908444
+  mean: 48.65810393908444
 - model_name: llava_v1.5_7b
   boundary: 59.92509363295879
   conservation: 24.76190476190476
@@ -837,7 +837,7 @@
   perspective: 44.69178082191782
   spatiality: 36.742424242424235
   toolusing: 90.20833333333333
-  true_mean: 48.54312845394317
+  mean: 48.54312845394317
 - model_name: instructblip-vicuna-13b
   boundary: 48.12734082397005
   conservation: 31.74603174603175
@@ -851,7 +851,7 @@
   perspective: 47.6027397260274
   spatiality: 51.32575757575758
   toolusing: 62.5
-  true_mean: 47.32748722513624
+  mean: 47.32748722513624
 - model_name: emu3-chat
   boundary: 67.97752808988764
   conservation: 36.19047619047619
@@ -865,7 +865,7 @@
   perspective: 20.94748858447488
   spatiality: 37.87878787878787
   toolusing: 71.04166666666667
-  true_mean: 46.58793384091467
+  mean: 46.58793384091467
 - model_name: llava-v1.6-vicuna-7b-hf
   boundary: 51.40449438202247
   conservation: 36.50793650793651
@@ -879,7 +879,7 @@
   perspective: 49.14383561643838
   spatiality: 47.53787878787878
   toolusing: 22.98611111111111
-  true_mean: 42.94371589420747
+  mean: 42.94371589420747
 - model_name: blip2-opt-6.7b
   boundary: 44.10112359550561
   conservation: 61.269841269841265
@@ -893,7 +893,7 @@
   perspective: 41.609589041095916
   spatiality: 40.15151515151515
   toolusing: 22.98611111111111
-  true_mean: 42.70534563183547
+  mean: 42.70534563183547
 - model_name: minigpt_4_v2
   boundary: 38.670411985018724
   conservation: 40.95238095238095
@@ -907,7 +907,7 @@
   perspective: 45.77625570776257
   spatiality: 36.93181818181818
   toolusing: 40.69444444444445
-  true_mean: 42.64036091607425
+  mean: 42.64036091607425
 - model_name: llava-v1.6-vicuna-13b-hf
   boundary: 42.41573033707864
   conservation: 30.79365079365079
@@ -921,7 +921,7 @@
   perspective: 49.8287671232877
   spatiality: 40.71969696969697
   toolusing: 22.98611111111111
-  true_mean: 42.2163799245523
+  mean: 42.2163799245523
 - model_name: cogvlm-grounding-generalist
   boundary: 51.872659176029956
   conservation: 67.93650793650795
@@ -935,7 +935,7 @@
   perspective: 27.56849315068493
   spatiality: 53.59848484848485
   toolusing: 41.7361111111111
-  true_mean: 41.41772308089612
+  mean: 41.41772308089612
 - model_name: falcon-11b-vlm
   boundary: 46.910112359550546
   conservation: 32.69841269841269
@@ -949,7 +949,7 @@
   perspective: 47.08904109589044
   spatiality: 29.35606060606061
   toolusing: 22.98611111111111
-  true_mean: 40.225181762459876
+  mean: 40.225181762459876
 - model_name: xverse-v-13b
   boundary: 44.00749063670411
   conservation: 43.17460317460317
@@ -963,7 +963,7 @@
   perspective: 32.47716894977168
   spatiality: 26.51515151515151
   toolusing: 22.56944444444444
-  true_mean: 37.53938841229869
+  mean: 37.53938841229869
 - model_name: fuyu-8b
   boundary: 48.50187265917602
   conservation: 66.98412698412697
@@ -977,7 +977,7 @@
   perspective: 37.84246575342469
   spatiality: 39.58333333333334
   toolusing: 25.277777777777782
-  true_mean: 37.24347982693288
+  mean: 37.24347982693288
 - model_name: blip2-opt-2.7b
   boundary: 45.41198501872657
   conservation: 61.269841269841265
@@ -991,7 +991,7 @@
   perspective: 32.81963470319635
   spatiality: 41.47727272727274
   toolusing: 22.98611111111111
-  true_mean: 37.212598156525324
+  mean: 37.212598156525324
 - model_name: visualglm-6b
   boundary: 49.25093632958802
   conservation: 66.98412698412697
@@ -1005,7 +1005,7 @@
   perspective: 28.538812785388128
   spatiality: 42.61363636363637
   toolusing: 26.59722222222222
-  true_mean: 36.25171143345816
+  mean: 36.25171143345816
 - model_name: instructblip-vicuna-7b
   boundary: 51.21722846441947
   conservation: 65.39682539682539
@@ -1019,7 +1019,7 @@
   perspective: 3.99543378995433
   spatiality: 42.992424242424235
   toolusing: 58.333333333333336
-  true_mean: 32.67218361631595
+  mean: 32.67218361631595
 - model_name: omnilmm-12b
   boundary: 44.6629213483146
   conservation: 15.55555555555555
@@ -1033,7 +1033,7 @@
   perspective: 43.66438356164386
   spatiality: 29.35606060606062
   toolusing: 22.98611111111111
-  true_mean: 32.200417743458445
+  mean: 32.200417743458445
 - model_name: minigpt_4_13b
   boundary: 33.14606741573033
   conservation: 40.95238095238095
@@ -1047,7 +1047,7 @@
   perspective: 33.047945205479465
   spatiality: 35.22727272727273
   toolusing: 24.375
-  true_mean: 30.849867611908838
+  mean: 30.849867611908838
 - model_name: minigpt_4_7b
   boundary: 32.865168539325836
   conservation: 44.44444444444443
@@ -1061,7 +1061,7 @@
   perspective: 34.41780821917809
   spatiality: 32.1969696969697
   toolusing: 17.152777777777782
-  true_mean: 28.5815577650319
+  mean: 28.5815577650319
 - model_name: xcomposer
   boundary: 10.112359550561791
   conservation: 5.71428571428571
@@ -1075,4 +1075,4 @@
   perspective: 0.17123287671232
   spatiality: 3.4090909090909
   toolusing: 14.16666666666667
-  true_mean: 9.92799106542511
+  mean: 9.92799106542511
